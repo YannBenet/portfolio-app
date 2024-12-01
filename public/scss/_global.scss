@@ -1,0 +1,5 @@
+@use "mixins";
+
+body {
+  background-color: mixins.colors(ambiant);
+}
