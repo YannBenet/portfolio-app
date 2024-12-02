@@ -1,5 +1,17 @@
-@use "mixins";
+@use "./mixins" as mix;
 
 body {
-  background-color: mixins.colors(ambiant);
+  background-color: mix.colors(ambiant);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,26 @@
+@use "./mixins" as mix;
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: mix.colors(primary);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

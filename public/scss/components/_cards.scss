@@ -1,7 +1,6 @@
 .cards {
   display: flex;
-}
-
-.card {
-  background-color: pink;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
 }

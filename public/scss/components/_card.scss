@@ -1,0 +1,12 @@
+.card {
+  background-color: pink;
+  width: calc(33.333% - 16px);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

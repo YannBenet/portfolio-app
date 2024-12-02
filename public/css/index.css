@@ -1,19 +1,56 @@
-/* Error: There is no module with the namespace "map".
- *   ,
- * 4 |   @return map.get($colors, $color);
- *   |           ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   public/scss/_mixins.scss 4:11  colors()
- *   public/scss/_global.scss 4:21  @use
- *   public/scss/main.scss 4:1      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "map".\a   \2577 \a 4 \2502    @return map.get($colors, $color);\a   \2502            ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   public/scss/_mixins.scss 4:11  colors()\a   public/scss/_global.scss 4:21  @use\a   public/scss/main.scss 4:1      root stylesheet';
+body {
+  background-color: #f4f1ed;
 }
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu nav ul li {
+  margin: 0 1rem;
+}
+.menu nav ul li a {
+  color: #413224;
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.card {
+  background-color: pink;
+  width: calc(33.333% - 16px);
+}
+.card:first-child {
+  margin-left: 0;
+}
+.card:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
