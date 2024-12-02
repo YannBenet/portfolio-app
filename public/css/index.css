@@ -14,6 +14,11 @@ main {
   flex-direction: column;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -33,6 +38,30 @@ main {
 .menu nav ul li a {
   color: #413224;
   text-decoration: none;
+}
+
+.header-resume {
+  display: flex;
+}
+.header-resume .header-resume__container {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+}
+.header-resume .header-resume__container .header-resume__picture {
+  background-color: red;
+}
+.header-resume .header-resume__container .header-resume__resume {
+  background-color: blue;
+}
+.header-resume .header-resume__container .header-resume__title {
+  color: #413224;
+}
+
+.footer-resume {
+  max-width: 400px;
 }
 
 .cards {

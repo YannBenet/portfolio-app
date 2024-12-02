@@ -1,0 +1,25 @@
+@use "./mixins" as mix;
+
+.header-resume {
+  display: flex;
+
+  .header-resume__container {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    gap: mix.sizes(gap);
+    justify-content: space-between;
+
+    .header-resume__picture {
+      background-color: red;
+    }
+
+    .header-resume__resume {
+      background-color: blue;
+    }
+
+    .header-resume__title {
+      color: mix.colors(primary);
+    }
+  }
+}

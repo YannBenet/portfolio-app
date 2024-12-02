@@ -1,6 +1,8 @@
+@use "../mixins" as mix;
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 16px;
+  gap: mix.sizes(gap);
 }
