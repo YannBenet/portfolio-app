@@ -1,22 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
 body {
-  background-color: #f4f1ed;
+  line-height: 1;
 }
 
-#content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 80%;
+ol,
+ul {
+  list-style: none;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
+blockquote,
+q {
+  quotes: none;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.secondary-btn, .primary-btn {
+  border-radius: 14px;
+  padding: 1em 1.5em;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background-color: #413224;
+  color: #968e86;
+}
+
+.secondary-btn {
+  border: solid 1px #413224;
 }
 
 .menu {
@@ -40,30 +171,6 @@ footer {
   text-decoration: none;
 }
 
-.header-resume {
-  display: flex;
-}
-.header-resume .header-resume__container {
-  background-color: yellow;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  justify-content: space-between;
-}
-.header-resume .header-resume__container .header-resume__picture {
-  background-color: red;
-}
-.header-resume .header-resume__container .header-resume__resume {
-  background-color: blue;
-}
-.header-resume .header-resume__container .header-resume__title {
-  color: #413224;
-}
-
-.footer-resume {
-  max-width: 400px;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -80,6 +187,59 @@ footer {
 }
 .card:last-child {
   margin-right: 0;
+}
+
+.header-resume {
+  display: flex;
+}
+.header-resume .header-resume__main {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+}
+.header-resume .header-resume__main .header-resume__picture {
+  background-color: red;
+}
+.header-resume .header-resume__main .header-resume__resume {
+  background-color: blue;
+}
+.header-resume .header-resume__main .header-resume__title {
+  color: #413224;
+}
+.header-resume .header-resume__secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #f4f1ed;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-resume {
+  max-width: 400px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,8 +1,8 @@
-@use "../mixins" as mix;
+@use "../utils/functions" as fn;
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: mix.sizes(gap);
+  gap: fn.sizes(gap);
 }

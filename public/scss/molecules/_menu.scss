@@ -1,4 +1,4 @@
-@use "./mixins" as mix;
+@use "../utils/functions" as fn;
 
 .menu {
   display: flex;
@@ -17,7 +17,7 @@
         margin: 0 1rem;
 
         a {
-          color: mix.colors(primary);
+          color: fn.colors(primary);
           text-decoration: none;
         }
       }

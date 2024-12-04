@@ -1,13 +1,13 @@
-@use "./mixins" as mix;
+@use "../utils/functions" as fn;
 
 .header-resume {
   display: flex;
 
-  .header-resume__container {
+  .header-resume__main {
     background-color: yellow;
     display: flex;
     flex-direction: row;
-    gap: mix.sizes(gap);
+    gap: fn.sizes(gap);
     justify-content: space-between;
 
     .header-resume__picture {
@@ -19,7 +19,13 @@
     }
 
     .header-resume__title {
-      color: mix.colors(primary);
+      color: fn.colors(primary);
     }
+  }
+
+  .header-resume__secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

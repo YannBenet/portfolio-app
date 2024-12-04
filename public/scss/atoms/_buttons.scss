@@ -1,0 +1,26 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+
+%btn {
+  border-radius: 14px;
+  padding: 1em 1.5em;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+// peut-être transformer en fonction (a voir)
+.primary-btn {
+  @extend %btn;
+  background-color: fn.colors(primary);
+
+  @if lightness(fn.colors(primary)) > 50% {
+    color: fn.colors(primary);
+  } @else {
+    color: fn.colors(secondary);
+  }
+}
+
+.secondary-btn {
+  @extend %btn;
+  border: solid 1px fn.colors(primary);
+}
