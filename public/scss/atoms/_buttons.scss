@@ -11,16 +11,16 @@
 // peut-être transformer en fonction (a voir)
 .primary-btn {
   @extend %btn;
-  background-color: fn.colors(primary);
+  background-color: fn.color(primary);
 
-  @if lightness(fn.colors(primary)) > 50% {
-    color: fn.colors(primary);
+  @if lightness(fn.color(primary)) > 50% {
+    color: fn.color(primary);
   } @else {
-    color: fn.colors(secondary);
+    color: fn.color(secondary);
   }
 }
 
 .secondary-btn {
   @extend %btn;
-  border: solid 1px fn.colors(primary);
+  border: solid 1px fn.color(primary);
 }
