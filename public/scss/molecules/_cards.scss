@@ -1,9 +1,8 @@
 @use "../utils/functions" as fn;
-@use "../utils/variables" as var;
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: var.$gap;
+  gap: fn.sizes(gap);
 }
