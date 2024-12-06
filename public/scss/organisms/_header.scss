@@ -1,4 +1,5 @@
 @use "../utils/functions" as fn;
+@use "../utils/variables" as var;
 
 .header-resume {
   display: flex;
@@ -7,7 +8,7 @@
     background-color: yellow;
     display: flex;
     flex-direction: row;
-    gap: fn.sizes(gap);
+    gap: var.$gap;
     justify-content: space-between;
 
     .header-resume__picture {
@@ -19,7 +20,7 @@
     }
 
     .header-resume__title {
-      color: fn.colors(primary);
+      color: fn.color(primary);
     }
   }
 
