@@ -1,29 +1,25 @@
 @use "../utils/variables" as var;
 
-@function colors($color) {
+@function font-family($family) {
+  @return map-get(var.$font-families, $family);
+}
+
+@function font-size($size) {
+  @return map-get(var.$font-sizes, $size);
+}
+
+@function font-weight($weight) {
+  @return map-get(var.$font-weights, $weight);
+}
+
+@function line-height($height) {
+  @return map-get(var.$line-heights, $height);
+}
+
+@function color($color) {
   @return map-get(var.$colors, $color);
 }
 
-@function sizes($size) {
-  @return map-get(var.$sizes, $size);
-}
-
-///
-/// Remove the unit of a length
-/// @param {Number} $number - Number to remove unit from
-/// @return {Number} - Unitless number
-// @function strip-unit($number) {
-//   @if type-of($number) == "number" and not unitless($number) {
-//     @return calc($number / ($number * 0 + 1));
-//   }
-
-//   @return $number;
-// }
-
-// @function rem($size, $base: var.$base-font-size) {
-//   @return calc($size / strip-unit($base)) * 1rem;
-// }
-
-// @function em($size, $base: var.$base-font-size) {
-//   @return calc($size / strip-unit($base)) * 1em;
+// @function stroke($color) {
+//   @return map-get(var.$colors, $color);
 // }
