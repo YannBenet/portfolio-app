@@ -1,24 +1,26 @@
 @use "../utils/functions" as fn;
-@use "../utils/variables" as var;
-@use "../atoms/menu-item";
-@use "../atoms/logo";
 
-.site-header {
+.menu {
   display: flex;
+  justify-content: space-between;
 
-  &__logo {
-    @extend .logo;
-    width: 20%;
-  }
-}
-
-.nav {
-  &__menu {
+  nav {
     display: flex;
-    gap: var.$gap;
-  }
+    justify-content: space-between;
 
-  &__item {
-    @extend .menu-item;
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: fn.colors(primary);
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

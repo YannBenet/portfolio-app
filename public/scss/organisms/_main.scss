@@ -1,11 +1,11 @@
 @use "../utils/variables" as var;
 @use "../utils/functions" as fn;
-@use "../utils/mixins" as mix;
 
 html,
 body {
-  @include mix.default-font;
-  background-color: fn.color(ambiant);
+  font-family: "Roboto", sans-serif;
+  font-size: var.$base-font-size;
+  background-color: fn.colors(ambiant);
 }
 
 main {

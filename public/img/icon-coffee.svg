@@ -1,10 +1,10 @@
 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_7_2)">
-<path d="M19.5 8.86371H20.3273C21.2049 8.86371 22.0466 9.20612 22.6672 9.81561C23.2877 10.4251 23.6364 11.2518 23.6364 12.1137C23.6364 12.9757 23.2877 13.8023 22.6672 14.4118C22.0466 15.0213 21.2049 15.3637 20.3273 15.3637H19.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.16669 8.66672H19.5V18.4167C19.5 19.566 19.0435 20.6682 18.2308 21.4808C17.4182 22.2935 16.316 22.7501 15.1667 22.7501H6.50002C5.35075 22.7501 4.24855 22.2935 3.43589 21.4808C2.62323 20.6682 2.16669 19.566 2.16669 18.4167V8.66672Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.5 1.0834V4.3334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.8333 1.0834V4.3334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.1667 1.0834V4.3334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.5 8.86371H20.3273C21.2049 8.86371 22.0466 9.20612 22.6672 9.81561C23.2877 10.4251 23.6364 11.2518 23.6364 12.1137C23.6364 12.9757 23.2877 13.8023 22.6672 14.4118C22.0466 15.0213 21.2049 15.3637 20.3273 15.3637H19.5" stroke="#413224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.16669 8.66672H19.5V18.4167C19.5 19.566 19.0435 20.6682 18.2308 21.4808C17.4182 22.2935 16.316 22.7501 15.1667 22.7501H6.50002C5.35075 22.7501 4.24855 22.2935 3.43589 21.4808C2.62323 20.6682 2.16669 19.566 2.16669 18.4167V8.66672Z" stroke="#413224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.5 1.0834V4.3334" stroke="#413224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.8333 1.0834V4.3334" stroke="#413224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.1667 1.0834V4.3334" stroke="#413224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_7_2">
