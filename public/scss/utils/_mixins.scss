@@ -19,11 +19,17 @@
   stroke: fn.color(secondary);
 }
 
-// @mixin font($size, $weight, $family) {
-//   font-size: fn.font-size($size);
-//   font-weight: fn.font-weight($weight);
-//   font-family: fn.font-family($family);
-// }
+@mixin logo-font {
+  font-family: fn.font-family(secondary);
+  font-size: fn.font-size(base);
+  font-weight: fn.font-weight(medium);
+  color: fn.color(secondary);
+}
+
+@mixin card-container {
+  background-color: fn.color(light);
+  border-radius: 12px;
+}
 
 // MIXINS WITH PARAMETERS & ARGUMENTS FROM VARIABLES
 

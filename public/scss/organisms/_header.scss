@@ -1,32 +1,64 @@
 @use "../utils/functions" as fn;
 @use "../utils/variables" as var;
+@use "../utils/mixins" as mix;
 
 .header-resume {
   display: flex;
+  gap: var.$gap;
 
-  .header-resume__main {
-    background-color: yellow;
+  &__container {
+    width: 80%;
     display: flex;
-    flex-direction: row;
+    align-items: stretch;
     gap: var.$gap;
     justify-content: space-between;
+  }
 
-    .header-resume__picture {
-      background-color: red;
-    }
+  &__picture {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
 
-    .header-resume__resume {
-      background-color: blue;
-    }
-
-    .header-resume__title {
-      color: fn.color(primary);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
-  .header-resume__secondary {
+  &__resume {
+    // background-color: blue;
+    @include mix.card-container;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5em;
+    height: auto;
+    // border-radius: 12px;
+    width: 70%;
+    //width: auto;
+  }
+
+  &__title {
+    color: fn.color(primary);
+  }
+
+  &__description {
+  }
+
+  &__secondary {
+    gap: var.$gap;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  &__job {
+    @include mix.card-container;
+    padding: 1em;
   }
 }

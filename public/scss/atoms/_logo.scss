@@ -18,8 +18,7 @@
   }
 
   a {
-    @include mix.color(secondary);
-    @include mix.font-weight(bold);
+    @include mix.logo-font;
     text-decoration: none;
   }
 }

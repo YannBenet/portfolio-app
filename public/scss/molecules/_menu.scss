@@ -8,11 +8,13 @@
 
   &__logo {
     @extend .logo;
-    width: 20%;
+    width: 22%;
   }
 }
 
 .nav {
+  width: 75%;
+
   &__menu {
     display: flex;
     gap: var.$gap;
