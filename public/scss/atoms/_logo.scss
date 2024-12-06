@@ -1,0 +1,25 @@
+@use "../utils/mixins" as mix;
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  .svg {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.1rem;
+
+    path {
+      @include mix.logo;
+    }
+  }
+
+  a {
+    @include mix.color(secondary);
+    @include mix.font-weight(bold);
+    text-decoration: none;
+  }
+}
