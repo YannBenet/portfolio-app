@@ -15,7 +15,7 @@
   }
 
   &__picture {
-    width: 30%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -31,24 +31,20 @@
   }
 
   &__resume {
-    // background-color: blue;
     @include mix.card-container;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1.5em;
-    height: auto;
-    // border-radius: 12px;
-    width: 70%;
-    //width: auto;
+    width: 65%;
   }
 
   &__title {
-    color: fn.color(primary);
+    @include mix.heading-primary;
   }
 
-  &__description {
-  }
+  // &__description {
+  //   @include mix.body-text;
+  // }
 
   &__secondary {
     gap: var.$gap;
@@ -57,8 +53,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  &__job {
+
+  &__secondary-container {
     @include mix.card-container;
-    padding: 1em;
+    display: inline-block;
+    height: 100%;
+    align-content: center;
   }
 }

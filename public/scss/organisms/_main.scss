@@ -2,15 +2,14 @@
 @use "../utils/functions" as fn;
 @use "../utils/mixins" as mix;
 
+@use "../atoms/heading-primary";
+@use "../molecules/card";
+@use "../organisms/cards";
+
 html,
 body {
   @include mix.default-font;
   background-color: fn.color(ambiant);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 #content {
@@ -18,4 +17,18 @@ main {
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
+}
+
+.main {
+  &__title {
+    @include mix.heading-primary;
+    margin: 1.5em 0 1em 1em;
+  }
+  &__cards {
+    @extend .cards;
+  }
+
+  &__card {
+    @extend .card;
+  }
 }

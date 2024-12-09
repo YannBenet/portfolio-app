@@ -1,0 +1,5 @@
+@use "../utils/mixins" as mix;
+
+.heading-primary {
+  @include mix.heading-primary;
+}

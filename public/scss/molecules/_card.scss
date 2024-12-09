@@ -1,12 +1,30 @@
-.card {
-  background-color: pink;
-  width: calc(33.333% - 16px);
+@use "../utils/mixins" as mix;
+@use "../atoms/index" as atoms;
 
-  &:first-child {
-    margin-left: 0;
+.card {
+  @include mix.card-container;
+  padding: 0;
+  width: calc(33.333% - 2.67em);
+
+  &__image {
+    object-fit: cover;
+    max-height: 200px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
   }
 
-  &:last-child {
-    margin-right: 0;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 2em 1em;
+    gap: 1em;
+  }
+
+  &__title {
+    @extend atoms, .heading-secondary !optional;
+  }
+
+  &__tag {
+    @extend atoms, .tag !optional;
   }
 }
