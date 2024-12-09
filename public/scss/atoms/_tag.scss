@@ -1,0 +1,5 @@
+@use "../utils/mixins" as mix;
+
+.tag {
+  @include mix.tag;
+}

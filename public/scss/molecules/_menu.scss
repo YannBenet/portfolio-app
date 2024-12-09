@@ -1,13 +1,12 @@
 @use "../utils/functions" as fn;
 @use "../utils/variables" as var;
-@use "../atoms/menu-item";
-@use "../atoms/logo";
+@use "../atoms/index" as atoms;
 
 .site-header {
   display: flex;
 
   &__logo {
-    @extend .logo;
+    @extend atoms, .logo !optional;
     width: 22%;
   }
 }
@@ -21,6 +20,6 @@
   }
 
   &__item {
-    @extend .menu-item;
+    @extend atoms, .menu-item !optional;
   }
 }

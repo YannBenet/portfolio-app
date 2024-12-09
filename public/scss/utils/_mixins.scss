@@ -14,6 +14,22 @@
   color: fn.color(primary);
 }
 
+@mixin heading-primary {
+  font-family: fn.font-family(primary);
+  font-size: fn.font-size(x-large);
+  font-weight: fn.font-weight(bold);
+  line-height: fn.line-height(large);
+  color: fn.color(primary);
+}
+
+@mixin heading-secondary {
+  font-family: fn.font-family(primary);
+  font-size: fn.font-size(large);
+  font-weight: fn.font-weight(bold);
+  line-height: fn.line-height(large);
+  color: fn.color(primary);
+}
+
 @mixin logo {
   // font-weight: fn.font-weight(bold);
   stroke: fn.color(secondary);
@@ -29,6 +45,19 @@
 @mixin card-container {
   background-color: fn.color(light);
   border-radius: 12px;
+  padding: 2em;
+  height: -webkit-fill-available;
+  // height: 100%;
+}
+
+@mixin tag {
+  color: fn.color(secondary);
+  border-color: fn.color(secondary);
+  font-size: fn.font-size(small);
+  border: solid 1px;
+  width: min-content;
+  padding: 0.3em 0.5em;
+  border-radius: 0.4em;
 }
 
 // MIXINS WITH PARAMETERS & ARGUMENTS FROM VARIABLES
