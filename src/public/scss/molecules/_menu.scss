@@ -1,0 +1,25 @@
+@use "../utils/functions" as fn;
+@use "../utils/variables" as var;
+@use "../atoms/index" as atoms;
+
+.site-header {
+  display: flex;
+
+  &__logo {
+    @extend atoms, .logo !optional;
+    width: 22%;
+  }
+}
+
+.nav {
+  width: 75%;
+
+  &__menu {
+    display: flex;
+    gap: var.$gap;
+  }
+
+  &__item {
+    @extend atoms, .menu-item !optional;
+  }
+}

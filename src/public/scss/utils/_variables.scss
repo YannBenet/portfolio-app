@@ -1,0 +1,42 @@
+$base-font-size: 16px !default;
+$gap: 1em;
+
+$font-families: (
+  primary: (
+    Roboto,
+    Arial,
+    sans-serif
+  ),
+  secondary: (
+    "Rajdhani",
+    sans-serif
+  )
+);
+
+$font-sizes: (
+  x-small: 0.7rem,
+  small: 0.8rem,
+  base: 1rem,
+  large: 1.2rem,
+  x-large: 1.5rem
+);
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 600,
+  bold: 700
+);
+
+$line-heights: (
+  small: 1,
+  base: 1.2,
+  large: 1.4
+);
+
+$colors: (
+  primary: #413224,
+  secondary: #968e86,
+  ambiant: #f4f1ed,
+  light: #fff
+);

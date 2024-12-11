@@ -1,10 +1,11 @@
 @use "../utils/mixins" as mix;
 @use "../atoms" as atoms;
 
-.card {
+.card,
+%card {
   @include mix.card-container;
   padding: 0;
-  width: calc(33.333% - 2.67em);
+  width: calc(33.333% - 0.7em);
 
   &__image {
     object-fit: cover;

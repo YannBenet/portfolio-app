@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio-app": "node dist/portfolio-app/server/server.mjs",
-    "watch-scss": "sass public/scss/style.scss public/css/index.css --watch"
+    "watch-scss": "sass --watch src/public/scss/style.scss:public/css/index.css"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
     "@angular/ssr": "^18.2.11",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
+    "sass": "^1.82.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
   },
