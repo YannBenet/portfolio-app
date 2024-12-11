@@ -1,18 +1,5 @@
 @use "utils/reset";
-// @use "./utils/variables";
-// @use "./utils/functions";
 @use "utils/breakpoints";
-
-@use "./atoms/index" as atoms;
-// @use "./atoms/buttons";
-// @use "./atoms/typography";
-
-@use "./molecules/index" as molecules;
-// @use "./molecules/card";
-// @use "./molecules/menu";
-
-@use "./organisms/index" as organisms;
-// @use "./organisms/cards";
-// @use "./organisms/header";
-// @use "./organisms/main";
-// @use "./organisms/footer";
+@use "./atoms";
+@use "./molecules";
+@use "./organisms";

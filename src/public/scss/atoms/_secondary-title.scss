@@ -1,0 +1,6 @@
+@use "../utils/functions" as fn;
+
+.secondary-title,
+%secondary-title {
+  color: fn.color(secondary);
+}

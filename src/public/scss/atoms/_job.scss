@@ -1,0 +1,10 @@
+@use "../utils/functions" as fn;
+
+%job-icon,
+.job-icon,
+%job-title,
+.job-title {
+  path {
+    stroke: fn.color(secondary);
+  }
+}

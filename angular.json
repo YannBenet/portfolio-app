@@ -18,21 +18,22 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/portfolio-app",
+            // "index": "src/public/html/index.html",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": ["src/favicon.ico", "src/assets", "src/scss"],
+            // "assets": [
+            //   {
+            //     "glob": "**/*",
+            //     "input": "public"
+            //   }
+            // ],
             "styles": [
-              "src/styles.scss"
+              "src/public/css/index.css"
+              // "src/styles.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -83,10 +84,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -95,9 +93,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }

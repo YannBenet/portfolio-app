@@ -1,6 +1,6 @@
 @use "../utils/mixins" as mix;
 
-%primary,
-.primary {
+%heading-primary,
+.heading-primary {
   @include mix.heading-primary;
 }

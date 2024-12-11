@@ -1,7 +1,7 @@
-@forward "./buttons";
-@forward "./heading-primary";
-@forward "./heading-secondary";
-@forward "./tag";
-@forward "./logo";
-@forward "./menu-item";
-@forward "./typography";
+@forward "buttons" as btn-*;
+@forward "heading-primary" as heading-*;
+@forward "heading-secondary" as heading-*;
+@forward "tag" as tag-*;
+@forward "logo";
+@forward "menu-item";
+@forward "typography";

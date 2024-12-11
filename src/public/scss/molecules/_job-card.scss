@@ -1,0 +1,29 @@
+@use "../atoms" as atoms;
+@use "../utils/mixins" as mix;
+@use "../utils/functions" as fn;
+
+// %job-card,
+// .job-card {
+//   @extend atoms, %job-icon !optional;
+//   @extend atoms, %job-title !optional;
+//   @include mix.card-container;
+//
+// }
+
+.secondary-content,
+%secondary-content {
+  padding: 2em;
+}
+
+.secondary-icon,
+%secondary-icon {
+  @extend atoms, %secondary-icon !optional;
+  display: inline-block;
+  height: 100%;
+  align-content: center;
+}
+
+.secondary-title,
+%secondary-title {
+  @extend atoms, %secondary-title !optional;
+}

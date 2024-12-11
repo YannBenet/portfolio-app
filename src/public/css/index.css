@@ -135,23 +135,23 @@ table {
   border-spacing: 0;
 }
 
-.btn-secondary, .btn-primary {
+.secondary, .primary {
   border-radius: 14px;
   padding: 1em 1.5em;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.btn-primary {
+.primary {
   background-color: #413224;
+  color: #968e86;
 }
 
-.btn-secondary {
+.secondary {
   border: solid 1px #413224;
 }
 
-.main__title,
-.heading-primary {
+.primary {
   font-family: Roboto, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -159,8 +159,7 @@ table {
   color: #413224;
 }
 
-.card__title,
-.heading-secondary {
+.secondary {
   font-family: Roboto, Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -168,8 +167,7 @@ table {
   color: #413224;
 }
 
-.card__tag,
-.tag-technology {
+.technology {
   color: #968e86;
   border-color: #968e86;
   font-size: 0.8rem;
@@ -214,29 +212,13 @@ table {
   color: #413224;
 }
 
-.job-icon path,
-.job-title path {
-  stroke: #968e86;
-}
-
-.secondary-icon path,
-.header-resume__secondary-icon path {
-  stroke: #968e86;
-}
-
-.secondary-title,
-.header-resume__secondary-title {
-  color: #968e86;
-}
-
-.card,
-.cards__card {
+.card, .main__card {
   background-color: #fff;
   border-radius: 12px;
   padding: 2em;
   height: -webkit-fill-available;
   padding: 0;
-  width: calc(33.333% - 0.7em);
+  width: calc(33.333% - 2.67em);
 }
 .card__image {
   object-fit: cover;
@@ -264,18 +246,6 @@ table {
   display: flex;
   gap: 1em;
 }
-.secondary-content,
-.header-resume__secondary-content {
-  padding: 2em;
-}
-
-.secondary-icon,
-.header-resume__secondary-icon {
-  display: inline-block;
-  height: 100%;
-  align-content: center;
-}
-
 .header-resume {
   display: flex;
   gap: 1em;
@@ -325,6 +295,23 @@ table {
   flex-direction: column;
   justify-content: space-between;
 }
+.header-resume__secondary-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2em;
+  height: -webkit-fill-available;
+  display: inline-block;
+  height: 100%;
+  align-content: center;
+}
+
+.cards, .main__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
 html,
 body {
   font-size: 16px;
@@ -341,6 +328,11 @@ body {
 }
 
 .main__title {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #413224;
   margin: 1.5em 0 1em 1em;
 }
 footer {
@@ -350,13 +342,6 @@ footer {
 
 .footer-resume {
   max-width: 400px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1em;
 }
 
 /*# sourceMappingURL=index.css.map */
