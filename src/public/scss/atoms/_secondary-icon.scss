@@ -1,8 +1,0 @@
-@use "../utils/functions" as fn;
-
-.secondary-icon,
-%secondary-icon {
-  path {
-    stroke: fn.color(secondary);
-  }
-}

@@ -1,0 +1,10 @@
+.logo,
+%logo {
+  .logo-icon {
+    @extend atoms, %logo-icon !optional;
+  }
+
+  .logo-text {
+    @extend atoms, %logo-text !optional;
+  }
+}

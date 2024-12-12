@@ -1,4 +1,5 @@
 @use "../utils/functions" as fn;
+@use "../utils/mixins" as mix;
 
 %btn {
   border-radius: 14px;
@@ -10,7 +11,7 @@
 // peut-être transformer en fonction (a voir)
 .btn-primary {
   @extend %btn;
-  background-color: fn.color(primary);
+  @include mix.background(primary);
 }
 
 .btn-secondary {

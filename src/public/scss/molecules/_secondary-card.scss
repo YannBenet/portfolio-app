@@ -1,0 +1,16 @@
+@use "../atoms" as atoms;
+@use "../utils/mixins" as mix;
+@use "../utils/functions" as fn;
+
+.secondary-icon,
+%secondary-icon {
+  @extend atoms, %secondary-icon !optional;
+  display: inline-block;
+  height: 100%;
+  align-content: center;
+}
+
+.text-highlight,
+%text-highlight {
+  @extend atoms, %text-highlight !optional;
+}

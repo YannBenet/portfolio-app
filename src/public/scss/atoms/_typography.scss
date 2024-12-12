@@ -1,8 +1,39 @@
 @use "../utils/mixins" as mix;
+@use "../utils/functions" as fn;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 .body-text {
   @include mix.body-text;
+}
+
+%heading-primary,
+.heading-primary {
+  @include mix.heading-primary;
+}
+
+%heading-secondary,
+.heading-secondary {
+  @include mix.heading-secondary;
+}
+
+.text-highlight,
+%text-highlight {
+  color: fn.color(secondary);
+}
+
+.logo-text,
+%logo-text {
+  @include mix.logo-font;
+}
+
+.main-menu-text,
+%main-menu-text {
+  a {
+    @include mix.font-size(x-small);
+    @include mix.color(secondary);
+    @include mix.font-weight(regular);
+    text-decoration: none;
+  }
 }
