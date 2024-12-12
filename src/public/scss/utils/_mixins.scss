@@ -30,16 +30,12 @@
   color: fn.color(primary);
 }
 
-@mixin logo {
-  // font-weight: fn.font-weight(bold);
-  stroke: fn.color(secondary);
-}
-
 @mixin logo-font {
   font-family: fn.font-family(secondary);
   font-size: fn.font-size(base);
   font-weight: fn.font-weight(medium);
   color: fn.color(secondary);
+  text-decoration: none;
 }
 
 @mixin card-container {
@@ -47,7 +43,6 @@
   border-radius: 12px;
   padding: 2em;
   height: -webkit-fill-available;
-  // height: 100%;
 }
 
 @mixin tag {
@@ -62,10 +57,22 @@
 
 // MIXINS WITH PARAMETERS & ARGUMENTS FROM VARIABLES
 
+@mixin stroke($color) {
+  stroke: fn.color($color);
+}
+
 @mixin color($color) {
   color: fn.color($color);
 }
 
 @mixin font-weight($weight) {
   font-weight: fn.font-weight($weight);
+}
+
+@mixin font-size($size) {
+  font-size: fn.font-size($size);
+}
+
+@mixin background($color) {
+  background-color: fn.color($color);
 }

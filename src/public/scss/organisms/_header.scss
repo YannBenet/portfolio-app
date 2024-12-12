@@ -7,45 +7,29 @@
   display: flex;
   gap: var.$gap;
 
-  &__container {
+  &__primary {
     width: 80%;
     display: flex;
     align-items: stretch;
     gap: var.$gap;
     justify-content: space-between;
-  }
 
-  &__picture {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    overflow: hidden;
+    &__picture {
+      @extend atoms, %profile-pic-container !optional;
+    }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    &__resume {
+      @extend molecules, %resume !optional;
+
+      &-title {
+        @extend molecules, %resume-title !optional;
+      }
+
+      &-description {
+        @extend molecules, %resume-description !optional;
+      }
     }
   }
-
-  &__resume {
-    @include mix.card-container;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 65%;
-  }
-
-  &__title {
-    @include mix.heading-primary;
-  }
-
-  // &__description {
-  //   @include mix.body-text;
-  // }
 
   &__secondary {
     gap: var.$gap;
@@ -53,17 +37,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
 
-  &__secondary-content {
-    @extend molecules, %secondary-content !optional;
-  }
+    &_container {
+      &_content {
+        @include mix.card-container;
 
-  &__secondary-icon {
-    @extend molecules, %secondary-icon !optional;
-  }
-
-  &__secondary-title {
-    @extend molecules, %secondary-title !optional;
+        &-icon {
+          @extend molecules, %secondary-icon !optional;
+        }
+        &-text {
+          @extend molecules, %text-highlight !optional;
+        }
+      }
+    }
   }
 }

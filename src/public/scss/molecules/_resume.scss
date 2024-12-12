@@ -1,0 +1,19 @@
+@use "../utils/mixins" as mix;
+@use "../atoms" as atoms;
+
+.resume,
+%resume {
+  @include mix.card-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 65%;
+
+  &-title {
+    @extend atoms, %heading-primary !optional;
+  }
+
+  &-description {
+    @extend atoms, %body-text !optional;
+  }
+}

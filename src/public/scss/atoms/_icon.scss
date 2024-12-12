@@ -1,0 +1,28 @@
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mix;
+
+.logo-icon,
+%logo-icon {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.1rem;
+
+  path {
+    @include mix.stroke(secondary);
+  }
+}
+
+.main-menu-icon,
+%main-menu-icon {
+  path {
+    @include mix.stroke(secondary);
+  }
+}
+
+.secondary-icon,
+%secondary-icon {
+  path {
+    stroke: fn.color(secondary);
+  }
+}
