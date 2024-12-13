@@ -1,8 +1,8 @@
 @use "../utils/mixins" as mix;
 @use "../utils/functions" as fn;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 .body-text {
   @include mix.body-text;
@@ -26,6 +26,12 @@
 .logo-text,
 %logo-text {
   @include mix.logo-font;
+  @include mix.font-weight(light);
+
+  a {
+    @include mix.color(secondary);
+    text-decoration: none;
+  }
 }
 
 .main-menu-text,

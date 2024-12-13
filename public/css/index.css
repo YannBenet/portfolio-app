@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +133,21 @@ table {
   border-spacing: 0;
 }
 
+html,
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #f4f1ed;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .btn-secondary, .btn-primary {
   border-radius: 14px;
   padding: 1em 1.5em;
@@ -150,7 +163,8 @@ table {
   border: solid 1px #413224;
 }
 
-.card__tag,
+.card__body__tag,
+.main__cards__card__body__tag,
 .tag-technology {
   color: #968e86;
   border-color: #968e86;
@@ -178,7 +192,8 @@ table {
   color: #413224;
 }
 
-.card__title,
+.card__body__title,
+.main__cards__card__body__title,
 .heading-secondary {
   font-family: Roboto, Arial, sans-serif;
   font-size: 1.2rem;
@@ -192,10 +207,27 @@ table {
   color: #968e86;
 }
 
-.logo-text {
+.logo-text,
+.logo .logo__text,
+.header-top__logo .logo__text,
+.footer__col__logo .logo__text,
+.header-top__logo .footer__col__logo__text,
+.footer__col__logo .footer__col__logo__text,
+.logo .footer__col__logo__text {
   font-family: "Rajdhani", sans-serif;
   font-size: 1rem;
   font-weight: 600;
+  color: #968e86;
+  text-decoration: none;
+  font-weight: 300;
+}
+.logo-text a,
+.logo .logo__text a,
+.header-top__logo .logo__text a,
+.footer__col__logo .logo__text a,
+.header-top__logo .footer__col__logo__text a,
+.footer__col__logo .footer__col__logo__text a,
+.logo .footer__col__logo__text a {
   color: #968e86;
   text-decoration: none;
 }
@@ -209,13 +241,25 @@ table {
   text-decoration: none;
 }
 
-.logo-icon {
+.logo-icon,
+.logo .logo__icon,
+.header-top__logo .logo__icon,
+.footer__col__logo .logo__icon,
+.header-top__logo .footer__col__logo__icon,
+.footer__col__logo .footer__col__logo__icon,
+.logo .footer__col__logo__icon {
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.1rem;
 }
-.logo-icon path {
+.logo-icon path,
+.logo .logo__icon path,
+.header-top__logo .logo__icon path,
+.footer__col__logo .logo__icon path,
+.header-top__logo .footer__col__logo__icon path,
+.footer__col__logo .footer__col__logo__icon path,
+.logo .footer__col__logo__icon path {
   stroke: #968e86;
 }
 
@@ -247,8 +291,17 @@ table {
   object-fit: cover;
 }
 
+.card__header__image,
+.main__cards__card__header__image,
+.card__image {
+  object-fit: cover;
+  max-height: 200px;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
 .card,
-.cards__card {
+.main__cards__card {
   background-color: #fff;
   border-radius: 12px;
   padding: 2em;
@@ -256,13 +309,8 @@ table {
   padding: 0;
   width: calc(33.333% - 0.7em);
 }
-.card__image {
-  object-fit: cover;
-  max-height: 200px;
-  width: 100%;
-  border-radius: 12px 12px 0 0;
-}
-.card__body {
+.card__body,
+.main__cards__card__body {
   display: flex;
   flex-direction: column;
   padding: 1em 1em 2em 1em;
@@ -284,6 +332,12 @@ table {
   align-content: center;
 }
 
+.logo,
+.header-top__logo,
+.footer__col__logo {
+  display: flex;
+  align-items: center;
+}
 .resume,
 .header-resume__primary__resume {
   background-color: #fff;
@@ -319,39 +373,29 @@ table {
   padding: 2em;
   height: -webkit-fill-available;
 }
-html,
-body {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: Roboto, Arial, sans-serif;
-  background-color: #f4f1ed;
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .main__title {
   margin: 1.5em 0 1em 1em;
 }
-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-resume {
-  max-width: 400px;
-}
-
-.cards {
+.main__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1em;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__col {
+  max-width: 400px;
+}
+.footer__col__logo {
+  padding: 2em 1em 1em 1em;
+}
+.footer-resume {
+  max-width: 400px;
+}
+
 .header-top {
   display: flex;
 }
