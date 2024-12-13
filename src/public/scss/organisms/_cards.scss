@@ -2,14 +2,3 @@
 @use "../utils/variables" as var;
 
 @use "../molecules" as molecules;
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: var.$gap;
-
-  &__card {
-    @extend molecules, %card !optional;
-  }
-}

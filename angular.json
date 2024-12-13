@@ -32,7 +32,7 @@
             //   }
             // ],
             "styles": [
-              "src/public/css/index.css"
+              "public/css/index.css"
               // "src/styles.scss"
             ],
             "scripts": [],

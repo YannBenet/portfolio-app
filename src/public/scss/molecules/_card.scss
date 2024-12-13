@@ -7,25 +7,24 @@
   padding: 0;
   width: calc(33.333% - 0.7em);
 
-  &__image {
-    object-fit: cover;
-    max-height: 200px;
-    width: 100%;
-    border-radius: 12px 12px 0 0;
+  &__header {
+    &__image {
+      @extend atoms, %card__image !optional;
+    }
   }
-
   &__body {
     display: flex;
     flex-direction: column;
     padding: 1em 1em 2em 1em;
     gap: 1em;
-  }
 
-  &__title {
-    @extend atoms, %heading-secondary !optional;
-  }
-
-  &__tag {
-    @extend atoms, %tag-technology !optional;
+    &__title {
+      @extend atoms, %heading-secondary !optional;
+    }
+    &__tag {
+      @extend atoms, %tag-technology !optional;
+    }
+    &__description {
+    }
   }
 }

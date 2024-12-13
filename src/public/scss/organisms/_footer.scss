@@ -1,6 +1,24 @@
-footer {
+@use "../molecules/" as molecules;
+
+.footer {
   display: flex;
   justify-content: space-between;
+
+  &__col {
+    max-width: 400px;
+
+    &__logo {
+      @extend molecules, %logo !optional;
+      padding: 2em 1em 1em 1em;
+
+      &__icon {
+        @extend molecules, %logo__icon !optional;
+      }
+      &__text {
+        @extend molecules, %logo__text !optional;
+      }
+    }
+  }
 }
 
 .footer-resume {

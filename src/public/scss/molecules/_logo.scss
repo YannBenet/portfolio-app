@@ -1,10 +1,17 @@
+@use "../atoms" as atoms;
+
 .logo,
 %logo {
-  .logo-icon {
+  display: flex;
+  align-items: center;
+
+  .logo__icon,
+  %logo__icon {
     @extend atoms, %logo-icon !optional;
   }
 
-  .logo-text {
+  .logo__text,
+  %logo__text {
     @extend atoms, %logo-text !optional;
   }
 }

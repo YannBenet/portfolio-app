@@ -1,0 +1,43 @@
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mix;
+
+@use "../atoms" as atoms;
+@use "../molecules" as molecules;
+
+.main {
+  &__title {
+    @extend atoms, %heading-primary !optional;
+    margin: 1.5em 0 1em 1em;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var.$gap;
+
+    &__card {
+      @extend molecules, %card !optional;
+
+      &__header {
+        @extend molecules, %card__header !optional;
+        &__image {
+          @extend molecules, %card__header__image !optional;
+        }
+      }
+      &__body {
+        @extend molecules, %card__body !optional;
+
+        &__title {
+          @extend molecules, %card__body__title !optional;
+        }
+        &__tag {
+          @extend molecules, %card__body__tag !optional;
+        }
+        &__description {
+          @extend molecules, %card__body__description !optional;
+        }
+      }
+    }
+  }
+}
