@@ -23,8 +23,8 @@
   color: fn.color(secondary);
 }
 
-.logo-text,
-%logo-text {
+.logo__text,
+%logo__text {
   @include mix.logo-font;
   @include mix.font-weight(light);
 

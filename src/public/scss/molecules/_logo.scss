@@ -7,11 +7,11 @@
 
   .logo__icon,
   %logo__icon {
-    @extend atoms, %logo-icon !optional;
+    @extend atoms, %logo__icon !optional;
   }
 
   .logo__text,
   %logo__text {
-    @extend atoms, %logo-text !optional;
+    @extend atoms, %logo__text !optional;
   }
 }
